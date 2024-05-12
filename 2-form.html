@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     
   <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/goit-js-hw-09/assets/reset-d09af457.css">
+  <link rel="stylesheet" href="/goit-js-hw-09/assets/reset-c66791dd.css">
 </head>
 <body>
     <a style="display: block;" href="./index.html">Back</a>
     <a style="display: block;" href="./1-gallery.html">Gallery</a>
 
-    <form class="feedback-form" autocomplete="off">
-        <label>
-            Email
-            <input type="email" name="email" autofocus />
-        </label>
-        <label>
-            Message
-            <textarea name="message" rows="8"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="form-container">
+        <form class="feedback-form" autocomplete="off">
+            <div class="form-field">
+                <label class="form-label" for="email">Email</label>
+                <div class="input-wrap">
+                    <input class="form-input" type="email" name="email" autofocus />
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-textarea" name="message" rows="8"></textarea>
+            </div>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+    </div>
 
     
 </body>
