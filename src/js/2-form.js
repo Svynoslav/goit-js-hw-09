@@ -26,6 +26,9 @@ function popForm() {
 
     email.value = data.email;
     message.value = data.message;
+
+    formData.email = data.email;
+    formData.message = data.message;
 }
 popForm();
 
